@@ -1,3 +1,8 @@
-.sidebar {
-  background: rgba(31, 29, 43, 1);
+.sidebar-bg {
+  background: var(--dark-bg);
+  width: 6vw;
+  a {
+    display: block;
+    padding: 1.63rem 1.5rem;
+  }
 }
