@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import { Link, Route, Routes } from "react-router-dom";
 import './App.css';
+import { Homepage, Logo, LogOut, Notifications, Payment, Settings, Shareholders } from "./assets/svg-img/svg.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="row">
+      <div className="col-2 sidebar-bg">
+        <Link className="d-block text-decoration-none" to="/logo"><Logo />Hello</Link>
+        <Link className="d-block text-decoration-none" to="/"><Homepage /></Link>
+        <Link className="d-block text-decoration-none" to="/settings"><Settings /></Link>
+        <Link className="d-block text-decoration-none" to="/logout"><LogOut /></Link>
+        <Link className="d-block text-decoration-none" to="/shareholder"><Shareholders /></Link>
+        <Link className="d-block text-decoration-none" to="/payment"><Payment /></Link>
+        <Link className="d-block text-decoration-none" to="/notifications"><Notifications /></Link>
+      </div>
     </div>
-  );
+
+  )
 }
 
 export default App;
