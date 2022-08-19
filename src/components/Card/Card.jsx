@@ -13,17 +13,25 @@ export const Card = ({ item }) => {
     setBookmark([...bookmark]);
   };
   return (
-    <li onClick={handleItem} className="m-3 p-3 border border-2">
-      <img
-        src={`https://food-service-layer-app.herokuapp.com/` + item.image}
-        alt="item.name"
-        width="150"
-        height="150"
-        className="homepage-img rounded-circle animate-rotate"
-      />
-      <h3>{item.name}</h3>
-      <p>{item.price}</p>
-      <p>{item.bowls} available</p>
-    </li>
+    <div className="col-3">
+      <li
+        onClick={handleItem}
+        className="p-3 border-none food-card"
+        style={{ width: "220px", height: "250px" }}
+      >
+        <img
+          src={`https://food-service-layer-app.herokuapp.com/` + item.image}
+          alt={item.name}
+          width="100"
+          height="100"
+          className="food-img rounded-circle"
+        />
+        <div className="food-details">
+          <h3>Title: {item.name}</h3>
+          <p>Number of Available Bowls: {item.bowls}</p>
+          <p>Price: ${item.price}</p>
+        </div>
+      </li>
+    </div>
   );
 };

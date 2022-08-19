@@ -12,9 +12,9 @@ export const ColdDishes = () => {
   });
 
   return (
-    <div>
+    <div className="container overflow-hidden my-5">
       {coldDishes.length && (
-        <ul className="d-flex flex-wrap">
+        <ul className="row gx-3 gy-5">
           {coldDishes.map((e) => (
             <Card key={e.id} item={e} />
           ))}

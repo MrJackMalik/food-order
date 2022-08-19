@@ -101,8 +101,9 @@ export const Settings = () => {
           Edit
         </button>
       </form>
+      <div className="container overflow-hidden my-5">
       {dishes.length && (
-        <ul className="d-flex flex-wrap">
+        <ul className="row gx-3 gy-5">
           {dishes.map((e) => (
             <EditCard
               key={e.id}
@@ -113,6 +114,8 @@ export const Settings = () => {
           ))}
         </ul>
       )}
+      </div>
+     
 
       <Modal setModal={setModal} modal={modal}>
         <form onSubmit={handleFormEdit} className="form w-50 mx-auto my-4">

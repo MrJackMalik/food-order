@@ -1,4 +1,4 @@
-.homepage-img {
+.food-img {
   animation: animate 5s ease-in-out infinite;
 }
 
@@ -8,5 +8,22 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.food-card {
+  background-color: #1f1d2b;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  img {
+    position: absolute;
+    top: -30px;
+    right: 60px;
+    left: 60px;
+    bottom: 0;
+  }
+  .food-details {
+    padding-top: 4.5rem;
   }
 }

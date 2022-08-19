@@ -1,5 +1,3 @@
-import React from "react";
-
 export const Modal = ({ children, modal, setModal }) => {
   return (
     <div
@@ -10,7 +8,7 @@ export const Modal = ({ children, modal, setModal }) => {
       }
     >
       <div className="d-flex justify-content-between">
-        <h2>Modal</h2>
+        <h2 className="text-center">Form</h2>
         <button onClick={() => setModal(false)} className="btn btn-danger">
           &times;
         </button>

@@ -12,9 +12,9 @@ export const Soup = () => {
   });
 
   return (
-    <div>
+    <div className="container overflow-hidden my-5">
       {soups.length && (
-        <ul className="d-flex flex-wrap">
+        <ul className="row gx-3 gy-5">
           {soups.map((e) => (
             <Card key={e.id} item={e} />
           ))}

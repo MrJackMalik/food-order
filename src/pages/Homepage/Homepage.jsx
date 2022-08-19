@@ -3,29 +3,48 @@ import "./HomePage.scss";
 export const Homepage = () => {
   return (
     <div className="homepage">
-      <div className="profile d-flex justify-content-space-between align-item-center bg-light">
-        <div className="">dfdfdf</div>
+      <div className="profile d-flex justify-content-space-between align-item-center">
         <div className="">
-          <input type="text" />
+          <h3>Jaegor Resto</h3>
+          <p>Tuesday, 2 Feb 2021</p>
         </div>
+        <div className=""></div>
       </div>
-      <div className="d-lex bg-success p-3">
-        <Link className="text-white me-4 text-decoration-none" to="/">
+      <div className="col p-3">
+        <Link
+          className=" col-2 text-white me-4 text-decoration-none food-types"
+          to="/"
+        >
           Hot dishes
         </Link>
-        <Link className="text-white me-4 text-decoration-none" to="cold">
+        <Link
+          className="col-2 text-white me-4 text-decoration-none food-types"
+          to="cold"
+        >
           Cold dishes
         </Link>
-        <Link className="text-white me-4 text-decoration-none" to="soup">
+        <Link
+          className="col-2 text-white me-4 text-decoration-none food-types"
+          to="soup"
+        >
           Soup
         </Link>
-        <Link className="text-white me-4 text-decoration-none" to="grill">
+        <Link
+          className="col-2 text-white me-4 text-decoration-none food-types"
+          to="grill"
+        >
           Grill
         </Link>
-        <Link className="text-white me-4 text-decoration-none" to="appertizer">
+        <Link
+          className="col-2 text-white me-4 text-decoration-none food-types"
+          to="appertizer"
+        >
           Appertizer
         </Link>
-        <Link className="text-white me-4 text-decoration-none" to="dessert">
+        <Link
+          className="col-2 text-white me-4 text-decoration-none food-types"
+          to="dessert"
+        >
           Dessert
         </Link>
       </div>

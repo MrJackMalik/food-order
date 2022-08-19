@@ -12,9 +12,9 @@ export const Grill = () => {
   });
 
   return (
-    <div>
+    <div className="container overflow-hidden my-5">
       {grills.length && (
-        <ul className="d-flex flex-wrap ">
+        <ul className="row gx-3 gy-5">
           {grills.map((e) => (
             <Card key={e.id} item={e} />
           ))}
